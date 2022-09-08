@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;1,400&display=swap');
+
+html, body {
+    margin: 0;
+    background-color: wheat;
+}
+
+#app {
+    /* background-color: whitesmoke; */
+    padding: 40px 0;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.tagline {
+    font-style: italic;
+    font-weight: 400;
+}
+
+hr {
+    margin: 40px auto;
+    width: 60%;
+    border-top: 1px solid #ddd;
+}
+
+.video {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.todo-list {
+    background-color: greenyellow;
+    margin-top: 2rem;
+    width: 60%;
+    padding: 1.5rem;
+}
+
+.add-todo {
+    width: 50%;
+    display: flex;
+    justify-items: center;
+}
+
+.add-todo input {
+    width: 85%;
+    height: 2rem;
+}
+
+.add-todo button {
+    width: 15%;
+    /* height: 1.5rem; */
+}
+
+.todo-item {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.todo-item input {
+    width: 65%;
+    height: 1.6rem;
+}
+
+.update, .delete {
+    width: 16%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.gr-container {
+    padding: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

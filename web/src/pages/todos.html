@@ -1,0 +1,22 @@
+{{ define "content"}}
+<div class="gr-container">
+    <h2 class="heading">Todo List</h2>
+    <form class="add-todo" action="/todos" method="post">
+        <input type="text" name="todo" />
+        <button type="submit">Add Todo</button>
+    </form>
+
+    <div class="todo-list">
+        {{ range . }}
+        <form class="todo-item" action="/{{.Name}}" method="post">
+            {{.Rank}}.
+            <input type="text" name="todo" value="{{.Name}}">
+            <button class="update" type="submit">Update Todo</button>
+            <button class="delete" type="button" onclick = "deleteTodo('{{.Name}}')" >Remove Todo</button>
+        </form>
+
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}
